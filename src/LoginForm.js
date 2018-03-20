@@ -19,7 +19,7 @@ class LoginForm extends Component <{}> {
       <Card>
         <View
         style={{
-        marginTop: 100,
+        marginTop: 200,
         }}
         >
 
