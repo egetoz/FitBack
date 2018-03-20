@@ -25,9 +25,9 @@ const styles = {
       borderRadius: 50,
       borderWidth: 1,
       borderColor: 'black',
-      marginLeft: 5,
-      marginRight: 5,
-      marginTop: 10,
+      marginLeft: 30,
+      marginRight: 30,
+      marginTop: 20,
       padding: 3,
     }
 };
