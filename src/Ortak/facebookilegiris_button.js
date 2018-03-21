@@ -14,7 +14,7 @@ const styles = {
   textStyle: {
       alignSelf: 'center',
       color: 'white',
-      fontSize: 25,
+      fontSize: 20,
       fontWeight: '800',
       paddingTop: 10,
       paddingBottom: 10,
