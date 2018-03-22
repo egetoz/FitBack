@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { TextInput, View, Text } from 'react-native';
+import { TextInput, View, Text, ScrollView } from 'react-native';
 import Card from './Ortak/Card';
 import CardSection from './Ortak/CardSection';
 import GirisButton from './Ortak/Giriş_Button';
@@ -12,15 +12,17 @@ class LoginForm extends Component <{}> {
   render() {
     const { inputStyle, firstTextStyle } = styles;
     return (
+      <ScrollView style={{ marginTop: 5 }}>
       <View
       style={{
-      flex: 1
+      flex: 1,
       }}
       >
       <Card>
         <View
         style={{
         marginTop: 200,
+        marginBottom: 50,
         }}
         >
 
@@ -50,6 +52,7 @@ class LoginForm extends Component <{}> {
         </View>
       </Card>
       </View>
+      </ScrollView>
     );
   }
 }
