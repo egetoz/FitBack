@@ -22,9 +22,10 @@ class LoginForm extends Component <{}> {
         <View
         style={{
         marginTop: 200,
-        marginBottom: 50,
+        marginBottom: 100,
         }}
         >
+  
 
           <Text
             style={firstTextStyle}

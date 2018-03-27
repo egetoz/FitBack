@@ -1,28 +1,42 @@
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Button, Text, View } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import LoginForm from './src/LoginForm';
+import AcilisSayfasi from './src/AcilisSayfasi';
 
 
-class HomeScreen extends React.Component {
+class IlkAcilis extends React.Component {
   render() {
-    const { appStyle } = styles;
     return (
-      <LoginForm style={appStyle} />
+      <AcilisSayfasi />
     );
   }
 }
 
+class GirisYapmaEkrani extends React.Component {
+  render() {
+    return (
+    <LoginForm />
+    );
+  }
+}
 
-export default StackNavigator({
-  Home: {
-    screen: HomeScreen,
+const RootStack = StackNavigator(
+  {
+    Home: {
+      screen: IlkAcilis,
+    },
+    LoginPage: {
+      screen: GirisYapmaEkrani,
+    },
   },
-});
+  {
+    initialRouteName: 'Home',
+  }
+);
 
-
-const styles = {
-  appStyle: {
-    backgroundColor: '#282B48',
-  },
-};
+export default class App extends React.Component {
+  render() {
+    return <RootStack />;
+  }
+}
